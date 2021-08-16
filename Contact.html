@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--creating title-->
+        <title>Pranjal Piya | Contact</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--linking CSS in html using link tag-->
+    <link rel="stylesheet" href="../websites/CSS/style.css">
+    <link rel="stylesheet" href="../websites/CSS/nav.css">
+    <script
+    src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+    data-auto-a11y="true"
+  ></script>
+    </head>
+    <body background="../websites/images/image1.jpeg"> 
+       
+        
+<!--content will go here-->
+<!-- navigation -->
+        <div class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" >
+                <i class="fas fa-bars" id="checkbtn"></i>
+                <i class="fas fa-times" id="cancelbtn"></i>
+            </label>
+
+            <a href="Home.html"> <label class="logo">Pranjal Piya</label></a>
+
+
+            <ul>
+<li><a  href="Home.html">Home</a></li>
+<li><a  href="CV.html" >CV</a></li>
+<li><a  href="Blog.html">Blog</a></li>
+<li><a  href="Research.html">Research</a></li>
+<li><a class="homered" href="Contact.html">Contact</a> </li>
+</div>
+</div>
+</div>
+<div class="divider "></div>
+
+<!--creating table-->
+<table >
+    <tr>
+        <!--inline CSS-->
+<th style="background-color: black;"><h1 style="color:lightblue; font-family: sans-serif;"> Contact Us</h1>
+    <h1 style="color: lightblue;font-family: sans-serif;"> Have question..? Leave a message here.</h1></th>
+    </tr>
+    <tr>
+<th><div class="contact">
+    <!-- creating validform-->
+
+<form onsubmit="validateform()">
+    First Name: <br>
+    <input id="fn" placeholder="write first name" name="firstname"  required>
+    <br>
+    
+    Last Name: <br>
+    <input id="ln"   placeholder="write last name" name="lastname"  required>
+   
+    <br>
+    
+    Address: <br>
+    <input id="ad" placeholder="write address" name="address"  required>
+    <br>
+  
+    
+    Message us: <br>
+    <textarea   id="msg" name="message" rows="10" cols="30" placeholder="write a message" name="messageUs"  required></textarea> </textarea>
+    <br>
+    <br>
+   <button onclick="validateform()">Submit</button>
+</br>
+    </form>
+
+    <!--java script-->
+<script>
+    function validateform(){
+        var firstname= document.getElementById('fn');
+        var lastname= document.getElementById('ln');
+        var address= document.getElementById('ad');
+        var message= document.getElementById('msg');
+
+        if(firstname.value==''||lastname.value==''||address.value==''||message.value==''){
+            alert('fill up the form');
+        }
+        else{
+            alert('thanks for filling up the form..!');
+        }
+
+    }
+</script>
+</th>
+    </tr>
+</table>
+<!--creating footer-->
+
+<footer>
+    <h2>Pranjal Piya</h2>
+    <div class="icons">
+        <a href="https://www.facebook.com/pranjalpiya/">
+          <i class="fab fa-facebook-f" id="icons"></i
+        ></a>
+        <a href="https://www.instagram.com/pranjalpiya/"
+          ><i class="fab fa-instagram" id="icons"></i
+        ></a>
+        <a href="https://twitter.com/NyctophiliaPiya">
+          <i class="fab fa-twitter" id="icons"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/pranjalpiya/"
+          ><i class="fab fa-linkedin-in" id="icons"></i
+        ></a>
+    </div>
+      <p><i>
+        All Right Reserved <i class="far fa-copyright"></i> Developed by Pranjal
+        Piya
+      </i></p>
+    
+</footer>
+ <!--footer closed-->
+    <!--footer closed-->
+    </body>
+</html>
+<!--html closed-->
